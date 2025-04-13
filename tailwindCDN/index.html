@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gradient cards</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center min-h-screen bg-gray-100">
+      <div
+        class="flex flex-col items-center justify-center m-5 space-y-10 md:flex-row md:space-y-0 md:space-x-10 max-w-screen-lg mx-auto"
+      >
+        <!-- card1 container -->
+        <div
+          class="relative group w-80 md:w-[500px] rounded-xl overflow-hidden shadow-2xl"
+        >
+          <!-- image 1-->
+          <img
+            src="../img/desk.jpeg"
+            alt="desk"
+            class="w-full h-full object-cover"
+          />
+          <!-- gradient layer 1 -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300 group-hover:opacity-0"
+          ></div>
+          <!-- content layer 1 -->
+          <div
+            class="absolute inset-0 bg-black/40 text-white flex flex-col justify-center items-center text-center space-y-4 p-4 md:space-y-6"
+          >
+            <h2 class="text-xl font-bold md:text-2xl">Workspace</h2>
+            <p class="text-sm mt-1 md:text-2xl">
+              Modern setup for creative minds
+            </p>
+            <button
+              class="px-5 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition duration-300"
+            >
+              Transparent Button
+            </button>
+          </div>
+        </div>
+
+        <!-- card2 container -->
+        <div
+          class="relative group w-80 md:w-[500px] rounded-xl overflow-hidden shadow-2xl"
+        >
+          <!-- image 2-->
+          <img
+            src="../img/machines.jpeg"
+            alt="desk"
+            class="w-full h-full object-cover"
+          />
+          <!-- gradient layer 2 -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300 group-hover:opacity-0"
+          ></div>
+          <!-- content layer 2 -->
+          <div
+            class="absolute inset-0 bg-black/40 text-white flex flex-col justify-center items-center text-center space-y-4 p-4 md:space-y-6"
+          >
+            <h2 class="text-xl font-bold md:text-2xl">Workspace</h2>
+            <p class="text-sm mt-1 md:text-2xl">
+              Modern setup for creative minds
+            </p>
+            <button
+              class="px-5 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition duration-300"
+            >
+              Transparent Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
